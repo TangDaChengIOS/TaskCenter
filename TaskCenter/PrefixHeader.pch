@@ -1,0 +1,41 @@
+//
+//  PrefixHeader.pch
+//  TaskCenter
+//
+//  Created by 汤达成 on 18/1/23.
+//  Copyright © 2018年 Tang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+ATADD.h"
+#import "RequestManager.h"
+#import "ShowTipsView.h"
+#import "ATAlterView.h"
+
+#define MAXWIDTH     ([UIScreen mainScreen].bounds.size.width)//屏幕宽度
+#define MAXHEIGHT    ([UIScreen mainScreen].bounds.size.height)//屏幕高
+#define kPROPORTION  ([UIScreen mainScreen].bounds.size.width)/375.0f //比例
+
+#define UIColorFromINTValue(r ,g ,b) [UIColor colorWithRed:(r /255.0) green:(g/255.0) blue:(b/255.0) alpha:1.0]
+
+#define UIColorFromRGBValue(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define MainColor UIColorFromRGBValue(0x35c3e9)
+#define RedColor UIColorFromRGBValue(0xff2121)
+#define BackColor UIColorFromRGBValue(0xeeeeee)
+#define MainTextColor UIColorFromRGBValue(0x444444)
+#define SecTextColor UIColorFromRGBValue(0x777777)
+#define ThirTexColor UIColorFromRGBValue(0x999999)
+#define TabBackColor UIColorFromRGBValue(0xf8f8f8)
+#define TitleColor UIColorFromRGBValue(0xf5f5f5)
+#define SpliteColor UIColorFromRGBValue(0xdddddd)
+
+#define KIMAGE(imageStr) [UIImage imageNamed:imageStr]
+#define KIMAGE_Ori(imageStr) [[UIImage imageNamed:imageStr] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+
+//#define kFont(size) [UIFont systemFontOfSize:size]
+#define kFont(size) [UIFont systemFontOfSize:(size * kPROPORTION)]
+
+#endif /* PrefixHeader_pch */

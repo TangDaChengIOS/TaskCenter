@@ -1,0 +1,6 @@
+framework module CINVccBar {
+  umbrella header "CINVccBar.h"
+
+  export *
+  module * { export * }
+}

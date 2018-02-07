@@ -1,0 +1,6 @@
+framework module CINSIP {
+  umbrella header "CINSIP.h"
+
+  export *
+  module * { export * }
+}

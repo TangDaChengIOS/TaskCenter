@@ -1,0 +1,6 @@
+framework module CINRTC {
+  umbrella header "CINRTC.h"
+
+  export *
+  module * { export * }
+}
